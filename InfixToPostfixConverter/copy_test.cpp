@@ -14,5 +14,5 @@ int main()
   std::string::iterator out = output.begin();
   my_copy(out, in);
 
-  std::cout << out << std::endl;
+  std::cout << output << std::endl;
 }

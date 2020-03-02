@@ -1,5 +1,5 @@
 #include <string>
-#include <math.h>
+#include <cmath>
 #include <iostream>
 
 int toInt(const std::string str)

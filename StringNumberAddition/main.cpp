@@ -12,10 +12,8 @@ int toInt(std::string const str)
   for (int index = 0; index != str.length(); ++index)
   {
     // Getting number from 'str' in index position 'index'.
-    std::string number{""};
-    number += str[index];
-
-    finalresult += std::stoi(number) * topower;
+    int number = str[index] - '0';
+    finalresult += number * topower;
     topower /= 10;
   }
   return finalresult;

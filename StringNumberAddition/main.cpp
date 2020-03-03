@@ -2,7 +2,7 @@
 #include <cmath>
 #include <iostream>
 
-int toInt(const std::string str)
+int toInt(std::string const str)
 {
   // Getting the numbers length, and based on that calculating the power needed to create the number
   int topower{ (int) pow( 10, ( str.length() - 1 ) ) };
@@ -21,7 +21,7 @@ int toInt(const std::string str)
   return finalresult;
 }
 
-std::string add(const std::string& number1, const std::string& number2)
+std::string add(std::string const& number1, std::string const& number2)
 {
   long long long_a = toInt(number1);
   long long long_b = toInt(number2);

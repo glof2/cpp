@@ -5,7 +5,7 @@
 int toInt(std::string const str)
 {
   // Getting the numbers length, and based on that calculating the power needed to create the number
-  int topower{ (int) pow( 10, ( str.length() - 1 ) ) };
+  int topower{ (int) std::pow( 10, ( str.length() - 1 ) ) };
 
   int finalresult{ 0 };
 

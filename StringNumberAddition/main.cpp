@@ -9,7 +9,7 @@ int toInt(std::string const str)
 
   int finalresult = 0;
 
-  for (int index = 0; index != str.length(); index++)
+  for (int index = 0; index != str.length(); ++index)
   {
     // Getting number from 'str' in index position 'index'.
     std::string number{""};

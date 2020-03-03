@@ -4,7 +4,7 @@
 
 int toInt(std::string const str)
 {
-  // Getting the numbers length, and based on that calculating the power needed to create the number
+  // Getting the numbers length, and based on that calculating the power needed to create the number.
   int topower = std::pow(10, str.length() - 1);
 
   int finalresult = 0;

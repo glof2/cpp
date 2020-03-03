@@ -6,7 +6,7 @@ int toInt(std::string const str)
 {
   // Getting the numbers length, and based on that calculating the power needed to create the number
   int topower{ (int) pow( 10, ( str.length() - 1 ) ) };
-  
+
   int finalresult{ 0 };
 
   for (int index{0}; index != str.length(); index++)
@@ -14,7 +14,7 @@ int toInt(std::string const str)
     // Getting number from 'str' in index position 'index'.
     std::string number{""};
     number += str[index];
- 
+
     finalresult += std::stoi( number ) * topower;
     topower /= 10;
   }

@@ -32,5 +32,5 @@ std::string add(std::string const& number1, std::string const& number2)
 
 int main()
 {
-  std::cout << add("300", "400");
+  std::cout << add("300", "400") << std::endl;
 }
